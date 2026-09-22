@@ -1,0 +1,6 @@
+{
+  "name": "PayLift",
+  "description": "Production-ready enterprise-grade Ride Hailing & Digital Escrow Wallet with real-time Dehradun fleet routing, cryptographic HMAC payments, and emergency safety protocols.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
