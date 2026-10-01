@@ -1,0 +1,33 @@
+*.iml
+.gradle
+.kotlin
+/local.properties
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+
+# Secrets and local configuration - never commit
+.env
+.env.*
+!.env.example
+backend/.env
+!backend/.env.example
+*.jks
+*.keystore
+*.p12
+*.pem
+keystore.properties
+google-services.json
+
+# Test backend runtime data
+backend/data/
+backend/node_modules/

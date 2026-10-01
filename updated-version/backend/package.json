@@ -1,0 +1,13 @@
+{
+  "name": "paylift-test-backend",
+  "version": "1.0.0",
+  "private": true,
+  "description": "PayLift test/reference backend. Zero runtime dependencies (node:sqlite).",
+  "engines": { "node": ">=22.13" },
+  "scripts": {
+    "start": "node --disable-warning=ExperimentalWarning src/server.js",
+    "start:dev": "node --disable-warning=ExperimentalWarning --env-file=.env.test src/server.js",
+    "test": "node --disable-warning=ExperimentalWarning --test --test-concurrency=1 test/*.test.js",
+    "gen:fare-vectors": "node scripts/gen-fare-vectors.js"
+  }
+}

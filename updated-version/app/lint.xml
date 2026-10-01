@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <!-- local.properties is machine-local and git-ignored (never part of the build output). -->
+    <issue id="PropertyEscape">
+        <ignore path="**/local.properties" />
+        <ignore path="../local.properties" />
+    </issue>
+</lint>

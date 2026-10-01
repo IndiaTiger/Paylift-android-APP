@@ -1,0 +1,6 @@
+{
+  "name": "PayLift",
+  "description": "Ride hailing client with a server-authoritative wallet ledger, payment and ride lifecycle. Requires a deployed PayLift backend; see docs/ for API contracts and configuration.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}
