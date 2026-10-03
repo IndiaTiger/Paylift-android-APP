@@ -3,6 +3,7 @@ package com.example.ui
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.test.junit4.createComposeRule
 import androidx.compose.ui.test.onRoot
+import com.example.ScreenshotCompare
 import com.example.data.RideRecord
 import com.example.data.UserProfile
 import com.example.data.WalletTransaction
@@ -72,7 +73,7 @@ class UiRegressionScreenshotTest {
         compose.mainClock.autoAdvance = false
         compose.setContent { PayLiftTheme(darkTheme = false) { content() } }
         compose.mainClock.advanceTimeBy(500)
-        compose.onRoot().captureRoboImage("src/test/screenshots/$name.png")
+        compose.onRoot().captureRoboImage("src/test/screenshots/$name.png", ScreenshotCompare.options)
     }
 
     @Test fun header() = snap("header") {

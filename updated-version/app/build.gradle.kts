@@ -215,4 +215,7 @@ tasks.withType<Test>().configureEach {
   maxParallelForks = 1
   maxHeapSize = "1536m"
   forkEvery = 40
+  // Screens format timestamps in the device time zone. The reference screenshots were recorded
+  // in India time, so pin it: otherwise the same test renders different dates on a UTC CI runner.
+  systemProperty("user.timezone", "Asia/Kolkata")
 }

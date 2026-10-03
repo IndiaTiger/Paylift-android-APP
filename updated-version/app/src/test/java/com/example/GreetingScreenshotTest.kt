@@ -44,6 +44,9 @@ class GreetingScreenshotTest {
     }
 
     composeTestRule.mainClock.advanceTimeBy(500)
-    composeTestRule.onRoot().captureRoboImage(filePath = "src/test/screenshots/greeting.png")
+    composeTestRule.onRoot().captureRoboImage(
+      filePath = "src/test/screenshots/greeting.png",
+      roborazziOptions = ScreenshotCompare.options,
+    )
   }
 }
